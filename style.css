@@ -1,0 +1,133 @@
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: #0f68a9;
+}
+
+.wrapper{
+    border: 2px solid #42a5f5;
+    padding: 10px 20px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    max-width: 700px;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px auto;
+}
+
+.headder{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.types button{
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(165, 165, 165);
+    border: none;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.types button:hover{
+    color: rgb(102, 102, 102);
+}
+
+.active_button#postfix{
+    animation: type_btn_anim 1s ease 0s 1 normal forwards;
+    background-color: aqua;
+    color: black !important;
+}
+
+.active_button#prefix{
+    animation: type_btn_anim 1s ease 0s 1 normal forwards;    
+    background-color: aqua;
+    color: black !important;
+}
+
+@keyframes type_btn_anim {
+	0% {
+		opacity: 0;
+		transform-origin: right;
+	}
+	100% {
+		opacity: 1;
+		transform-origin: right;
+	}
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: aqua;
+    text-shadow: 0px 3px 1px black;
+    font-size: 18px;
+}
+
+
+.input_line{
+    margin-right: 5px;
+}
+
+#inp{
+    width: 100%;
+    font-size: 20px;
+    height: 45px;
+}
+
+#output{
+    margin-top: 5px;
+    padding: 5px;
+    height: 35px;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: aqua;
+}
+
+.buttons{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    gap: 10px;
+}
+
+.btn{
+    padding: 10px 50px;
+    background-color: #00ffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00ffff7c;
+    animation: myAnim 0.3s ease 0s 1 normal forwards;
+}
+
+footer{
+    color: #e1e1e1c9;
+    margin: 10px auto;
+    font-family: sans-serif;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
